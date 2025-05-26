@@ -56,4 +56,4 @@ Untuk integrasi dinamis (misal dengan Python/Flask), pastikan file CSS dapat dia
 
 ---
 
-> Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah Rekayasa Perangkat Lunak. Tujuan utamanya adalah meningkatkan pengalaman belajar melalui media digital yang interaktif dan menyenangkan.
+> Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah Konstruksi Perangkat Lunak. Tujuan utamanya adalah meningkatkan pengalaman belajar melalui media digital yang interaktif dan menyenangkan.
