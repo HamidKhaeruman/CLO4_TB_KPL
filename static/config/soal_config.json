@@ -91,8 +91,8 @@
     "category": "Kriptografi",
     "question": "Apa itu enkripsi?",
     "options": [
-      "Jakarta",
-      "Andrea Hirata",
+      "Proses pengamanan data dengan mengubahnya menjadi format yang tidak dapat dibaca",
+      "Proses enkapsulasi data secara privat",
       "Proses mengubah data menjadi kode rahasia",
       "went"
     ],
