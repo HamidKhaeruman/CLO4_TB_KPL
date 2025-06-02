@@ -1,0 +1,50 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Quiz | EduQuiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo/logo.png') }}" alt="Logo EduQuiz" class="logo">
+        <h2>Hasil Quiz</h2>
+    </header>
+    <main>
+        <div class="score">
+            Skor Anda: <span>{{ score }}</span> dari <span>{{ total }}</span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pertanyaan</th>
+                    <th>Jawaban Anda</th>
+                    <th>Jawaban Benar</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in results %}
+                <tr>
+                    <td>{{ r['question'] }}</td>
+                    <td>{{ r['your_answer'] }}</td>
+                    <td>{{ r['correct_answer'] }}</td>
+                    <td>
+                        {% if r['is_correct'] %}
+                            <span class="correct">Benar</span>
+                        {% else %}
+                            <span class="wrong">Salah</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('home') }}" class="btn-accent">Kembali ke Home</a>
+    </main>
+    <footer>
+        &copy; 2025 EduQuiz Team
+    </footer>
+</body>
+</html>

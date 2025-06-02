@@ -1,0 +1,25 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>EduQuiz - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo/logo.png') }}" alt="Logo EduQuiz" class="logo">
+        <h1>Selamat Datang di EduQuiz</h1>
+        <p>Simulasi quiz interaktif sederhana dan menarik untuk menguji wawasanmu.</p>
+    </header>
+    <main>
+        <div class="button-group">
+            <a href="{{ url_for('quiz') }}" class="btn-primary">Mulai Quiz</a>
+            <a href="{{ url_for('about') }}" class="btn-accent">Tentang Kami</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 EduQuiz Team
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Matematika",
+    "question": "Hasil dari 5 + 3 x 2 adalah...",
+    "options": [
+      "16",
+      "20",
+      "11",
+      "12"
+    ],
+    "answer": "11"
+  },
+  {
+    "category": "Matematika",
+    "question": "Nilai dari akar kuadrat 144 adalah...",
+    "options": [
+      "11",
+      "8",
+      "12",
+      "-12"
+    ],
+    "answer": "12"
+  },
+  {
+    "category": "Bahasa Indonesia",
+    "question": "Ibukota negara Indonesia saat ini adalah...",
+    "options": [
+      "Nusantara",
+      "Yogyakarta",
+      "London",
+      "Jakarta"
+    ],
+    "answer": "Nusantara"
+  },
+  {
+    "category": "Bahasa Indonesia",
+    "question": "Siapakah penulis novel 'Laskar Pelangi'?",
+    "options": [
+      "Ahmad Rosidi",
+      "Andrea Hirata",
+      "Danang Hermansyah",
+      "Semua Benar"
+    ],
+    "answer": "Andrea Hirata"
+  },
+  {
+    "category": "Bahasa Inggris",
+    "question": "What is the capital city of United Kingdom?",
+    "options": [
+      "London",
+      "Manchester",
+      "New Castle",
+      "Seoul"
+    ],
+    "answer": "London"
+  },
+  {
+    "category": "Bahasa Inggris",
+    "question": "What is the past tense of 'go'?",
+    "options": [
+      "gone",
+      "going",
+      "none of the above",
+      "went"
+    ],
+    "answer": "went"
+  },
+  {
+    "category": "Manajemen Bisnis",
+    "question": "Apa kepanjangan dari SWOT?",
+    "options": [
+      "Strenghs, Wilderness, Overcommit, Talking",
+      "Summoning, Waiting, Outstanding, Trashtalker",
+      "Strengths, Weaknesses, Opportunities, Threats",
+      "Nothing right answer"
+    ],
+    "answer": "Strengths, Weaknesses, Opportunities, Threats"
+  },
+  {
+    "category": "Manajemen Bisnis",
+    "question": "Fungsi manajemen yang berkaitan dengan pengarahan dan motivasi karyawan disebut...",
+    "options": [
+      "Controlling",
+      "Planning",
+      "Leading",
+      "Money Management"
+    ],
+    "answer": "Leading"
+  },
+  {
+    "category": "Kriptografi",
+    "question": "Apa itu enkripsi?",
+    "options": [
+      "Jakarta",
+      "Andrea Hirata",
+      "Proses mengubah data menjadi kode rahasia",
+      "went"
+    ],
+    "answer": "Proses mengubah data menjadi kode rahasia"
+  },
+  {
+    "category": "Kriptografi",
+    "question": "Algoritma enkripsi simetris yang populer adalah...",
+    "options": [
+      "Andrea Hirata",
+      "went",
+      "AES",
+      "12"
+    ],
+    "answer": "AES"
+  }
+]

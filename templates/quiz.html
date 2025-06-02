@@ -1,0 +1,36 @@
+<!-- templates/quiz.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz | EduQuiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo/logo.png') }}" alt="Logo EduQuiz" class="logo">
+        <h2>Pertanyaan {{ index }} dari {{ total }}</h2>
+    </header>
+    <main>
+        <form method="post" autocomplete="off">
+            <!-- Tampilkan pertanyaan -->
+            <div class="question">{{ question['question'] }}</div>
+
+            <!-- Pilihan ganda (radio buttons) -->
+            <div class="options">
+                {% for option in question['options'] %}
+                <label>
+                    <input type="radio" name="answer" value="{{ option }}" required>
+                    {{ option }}
+                </label><br>
+                {% endfor %}
+            </div>
+
+            <button type="submit" class="btn-primary">Kirim Jawaban</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2025 EduQuiz Team
+    </footer>
+</body>
+</html>
