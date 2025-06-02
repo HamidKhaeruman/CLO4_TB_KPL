@@ -1,59 +1,87 @@
-# EduQuiz UI - Proyek Antarmuka Web Edukasi Interaktif
+# EduQuiz
 
-EduQuiz adalah aplikasi kuis edukatif berbasis web yang dirancang dengan HTML dan CSS. Proyek ini merupakan bagian dari pengembangan EduQuiz versi CLI menjadi web yang lebih interaktif, terstruktur, dan mudah digunakan.
+**EduQuiz** adalah aplikasi web simulasi quiz edukatif interaktif berbasis Python Flask, HTML, dan CSS.  
+Aplikasi ini dirancang untuk mengimplementasikan beberapa teknik konstruksi perangkat lunak modern seperti:  
+- State-based/Automata
+- Table-driven
+- Code reuse
+- Runtime configuration
+- Design Pattern (Singleton, Facade)
 
-## 📁 Struktur Folder
-
-Berikut adalah struktur folder yang digunakan dalam proyek ini:
-
+## Struktur Folder
 <pre>
-EduQuiz_UI/
-├── templates/
-│   ├── index.html          # Halaman utama / beranda
-│   ├── quiz.html           # Halaman kuis (soal & pilihan jawaban)
-│   ├── result.html         # Halaman hasil kuis
-│   ├── category.html       # Halaman daftar kategori kuis
-│   └── about.html          # Halaman tentang aplikasi dan tim
+EduQuiz/
 │
-├── assets/
+├── app.py
+│
+├── README.md
+│
+├── soal_config.json
+│
+├── src/
+│   ├── __init__.py
+│   ├── question_loader.py
+│   ├── state_machine.py
+│   ├── quiz_manager.py
+│   └── config.py
+│
+├── static/
+│   ├── config/
+│   │   └── soal_config.json
 │   ├── css/
-│   │   └── style.css       # File CSS utama untuk styling
-│   └── images/             # Folder untuk gambar (logo, ikon, ilustrasi, dsb)
+│   │   ├── home.css
+│   │   ├── quiz.css
+│   │   ├── result.css
+│   │   └── about.css
+│   ├── img/
+│   │   └── sample.png
+│   └── logo/
+│       └── logo.png
 │
-└── README.md               # Dokumentasi proyek
+├── templates/
+│   ├── home.html
+│   ├── quiz.html
+│   ├── result.html
+│   └── about.html
 </pre>
 
-## 🎨 Palet Warna
+## Penugasan Tim (4 Anggota)
+| Anggota     | Tanggung Jawab                 | File HTML         | File CSS       |
+| ----------- | ------------------------------ | ----------------- | -------------- |
+| Hamid       | Beranda / Home                 | home.html         | home.css       |
+| Ancha       | Halaman Quiz                   | quiz.html         | quiz.css       |
+| Ricky       | Hasil / Result                 | result.html       | result.css     |
+| Dava        | Tentang / About                | about.html        | about.css      |
 
-Proyek ini menggunakan palet warna lembut dan profesional untuk meningkatkan kenyamanan visual pengguna:
+## Cara Menjalankan
+1. Pastikan sudah install `flask` (`pip install flask`)
+2. Jalankan dengan:
+    ```
+    python app.py
+    ```
+3. Akses di browser: [http://localhost:5000](http://localhost:5000)
 
-| Nama Warna   | HEX        |
-|--------------|------------|
-| Dark Maroon  | `#432729`  |
-| Charcoal     | `#534F54`  |
-| Bronze       | `#A37949`  |
-| Sand         | `#F2D598`  |
-| Cream        | `#F5EED7`  |
+## Palet Warna
+- Background: `#FFFFFF`
+- Primary: `#FFA500`
+- Accent: `#007FFF`
+- Text: `#000000`
+- bg-200: `#f5f5f5`
+- primary-200: `dd8900`
+- primary-300: `904a00`
+- accent-200: `e0ffff`
+- text-200: `#2c2c2c`
 
-## 📑 Deskripsi Tiap Halaman
+## Design Pattern yang Diimplementasi
+- **Singleton** (di file `src/config.py`)
+- **Facade** (di file `src/quiz_manager.py`)
 
-- **`index.html`**: Menampilkan pengantar dan tombol mulai kuis.
-- **`quiz.html`**: Halaman kuis interaktif dengan soal dan opsi jawaban.
-- **`result.html`**: Menampilkan skor dan evaluasi hasil kuis.
-- **`category.html`**: Pengguna memilih kategori kuis sebelum mulai.
-- **`about.html`**: Informasi tentang aplikasi dan pengembangnya.
-
-## 📌 Catatan Tambahan
-
-- File HTML berada dalam folder `templates/` agar siap digunakan bersama framework seperti Flask atau Django.
-- Aset statis seperti CSS dan gambar ditempatkan dalam folder `assets/` untuk kemudahan manajemen.
-
-## 🚀 Cara Menggunakan
-
-Cukup buka `templates/index.html` di browser untuk mulai menjelajahi tampilan.
-
-Untuk integrasi dinamis (misal dengan Python/Flask), pastikan file CSS dapat diakses dari `static/` jika kamu ubah struktur lebih lanjut.
+## Standar Clean Code & Secure Coding
+- Pemisahan kode logic, resource, dan view
+- Validasi input user (required, strip, lower-case compare)
+- Session handling yang aman
+- Tidak menyimpan jawaban benar di client/browser
 
 ---
 
-> Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah Konstruksi Perangkat Lunak. Tujuan utamanya adalah meningkatkan pengalaman belajar melalui media digital yang interaktif dan menyenangkan.
+Tim EduQuiz - 2025

@@ -1,0 +1,34 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tentang Kami | EduQuiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo/logo.png') }}" alt="Logo EduQuiz" class="logo">
+        <h2>Tentang EduQuiz</h2>
+    </header>
+    <main>
+        <section>
+            <h3>Tim Pengembang</h3>
+            <ul>
+                <li>Hamid: Penanggung jawab Home</li>
+                <li>Ancha: Penanggung jawab Quiz</li>
+                <li>Ricky: Penanggung jawab Result</li>
+                <li>Dava: Penanggung jawab About</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Deskripsi</h3>
+            <p>EduQuiz adalah aplikasi quiz edukasi berbasis web yang didesain dengan <b>design pattern</b> dan teknik konstruksi perangkat lunak modern.</p>
+        </section>
+        <a href="{{ url_for('home') }}" class="btn-accent">Kembali ke Home</a>
+    </main>
+    <footer>
+        &copy; 2025 EduQuiz Team
+    </footer>
+</body>
+</html>
