@@ -22,7 +22,7 @@ def home():
 
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
-    #clean code untuk quiz_manager
+    # clean code quiz_manager
     quiz_manager = get_quiz_manager()
     if request.method == 'POST':
         answer = request.form.get('answer', '')
